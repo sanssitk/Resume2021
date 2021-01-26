@@ -1,0 +1,58 @@
+/******************************** Main Container */
+.profile {
+    display: flex;
+    color: #646464;
+}
+
+/******************************** Two Child of Profile Main Container */
+.icon {
+    background-color: #4ca5d0;
+    color: white;
+    padding: 16px;
+    height: 3.5rem;
+    width: 3rem;
+}
+
+.profile__container {
+    flex: 1;
+    background-color: white;
+}
+
+/******************************** Two Child of profile__container */
+.profile__header {
+    padding: 15px 0;
+    color: #4ca5d0;
+}
+
+.profile__body {
+    margin: 32px;
+}
+
+/**************************************************************** Profile Header */
+.profile__left {
+    display: flex;
+}
+
+.profile__image {
+    object-fit: contain;
+    height: 90px;
+    border: 4px solid #e5e5e5;
+}
+
+.accordion.active>.profile__container>.profile__left>.profile__image {
+    object-fit: contain;
+    height: 120px;
+    border: 4px solid #e5e5e5;
+
+    transition: all 0.5s ease;
+}
+
+.profile__image:hover {
+    transform: scale(1.2, 1.2);
+    border: 4px solid #e5e5e5;
+}
+
+.profile__name {
+    margin-left: 20px;
+    max-width: 300px;
+}
