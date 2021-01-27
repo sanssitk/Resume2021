@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Accordion.css";
 import Chevron from "./Chevron";
+// import { useStateValue } from "../../StateManagement/StateProvider";
 
 function Accordion(props) {
+  // const [{}, dispatch] = useStateValue();
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState("0px"); 
   const bodyContent = useRef(null);
