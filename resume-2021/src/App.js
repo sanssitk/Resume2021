@@ -8,6 +8,7 @@ function App() {
     <div className="app">
       <div className="topNav"></div>
       <div className="body-container">
+        
         <Profile />
 
         <Resume />
