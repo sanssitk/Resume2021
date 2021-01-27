@@ -37,3 +37,9 @@
     text-transform: uppercase;
     font-weight: 500;
 }
+
+
+/* Profile BOdy */
+.profile__body{
+    font-size: 16px;
+}

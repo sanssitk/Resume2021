@@ -11,9 +11,11 @@
 }
 
 .accordion__body {
+    padding: 0 24px;
     background-color: white;      
     max-height: 0;
-    overflow: hidden;  
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;  
 }
 /******************************** Three child of title Container */
 .icon {    
@@ -24,20 +26,26 @@
     position: absolute;
     top: 0;
     left: -60px;
+    cursor: pointer;
 }
 .accordion__name{
     display: flex;
 }
-.accordion__title {    
+.accordion__title {  
+    cursor: pointer;  
     font-size: 24px;
     font-weight: 600;
-    text-transform: uppercase;
-    color: white; 
+    text-transform: uppercase;    
     line-height: 3rem;
     padding: 0 1rem;    
 }
 
+/* .accordion__title::after{
+    content: "Hello";
+} */
+
 .chevron {
+    cursor: pointer;
     position: absolute;
     width: 50px;
     top: 8px;
@@ -49,8 +57,12 @@
     justify-content: center;
     align-items: center;
     object-fit: contain;    
+    transition: all 0.5s ease;
 }
-
+.chevron:hover{
+    color: white;
+    background-color: #e5e5e5;
+}
 .chevron > svg {
     font-size: 1.8rem;
     font-weight: bold;
