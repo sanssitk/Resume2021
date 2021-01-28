@@ -5,13 +5,15 @@ import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 
 function Portfolio() {
   return (
-    <Accordion
+    
+    <Accordion    
       color="#ffbc38"
       icon={<BusinessCenterIcon />}
       title="Portfolio"
       header=""
       body="PortfolioBody"
     />
+    
   );
 }
 

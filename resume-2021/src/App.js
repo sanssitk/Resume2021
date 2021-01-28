@@ -6,13 +6,10 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 function App() {
   return (
     <div className="app">
-      <div className="topNav"></div>
+      <div className="topNav" />
       <div className="body-container">
-        
         <Profile />
-
         <Resume />
-
         <Portfolio />
       </div>
     </div>

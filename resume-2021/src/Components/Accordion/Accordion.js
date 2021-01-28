@@ -14,7 +14,7 @@ function Accordion(props) {
   const parentDiv = useRef(null);
 
   const handleClick = (e) => {
-    const clickedDiv = parentDiv.current.id;    
+    const clickedDiv = parentDiv.current.id;
     switch (clickedDiv) {
       case "Profile":
         setIsOpen(!isOpen);
@@ -42,13 +42,21 @@ function Accordion(props) {
         setIsOpen(false);
         break;
     }
-    setHeight(
-      isOpen === false ? `${bodyContent.current.scrollHeight}px` : "0px"
-    );
+    setHeight(isOpen ? "0px" : `${bodyContent.current.scrollHeight}px`);
+  };
+
+  const defalutStyle = {
+    borderTop: "1px solid #e5e5e5",
+  };
+  const ProfileStyle = {
+    borderTop: "0px",
   };
 
   return (
-    <div className="accordion__Section">
+    <div
+      className="accordion__Section"
+      style={props.title === "Profile" ? ProfileStyle : defalutStyle}
+    >
       <div className="accordion__Section__header">
         <div
           className="accordion__title__container"
@@ -60,12 +68,29 @@ function Accordion(props) {
             <span className="icon" style={{ backgroundColor: props.color }}>
               {props.icon}
             </span>
+
+            {/***************** ********** When slider is opened */}
             <div
-              className="accordion__title"
+              className={
+                isOpen
+                  ? "accordion__title open"
+                  : props.title === "Profile"
+                  ? ""
+                  : "accordion__title"
+              }
               style={{ backgroundColor: props.color }}
             >
-              {props.title}
+              {isOpen ? props.title : ""}
             </div>
+
+            {/***************** ********** When slider is closed */}
+            {isOpen ? (
+              ""
+            ) : props.title === "Profile" ? (
+              ""
+            ) : (
+              <div className="accordion__title_close">{props.title}</div>
+            )}
           </div>
           <Chevron />
         </div>
