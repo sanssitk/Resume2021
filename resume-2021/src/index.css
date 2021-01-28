@@ -10,11 +10,18 @@ ul > li {
 body {
   background-color: #6f7165;
   margin: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+
+body::-webkit-scrollbar {  
+    display: none;  
 }
 
 code {

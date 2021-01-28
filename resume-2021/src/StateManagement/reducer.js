@@ -1,20 +1,32 @@
 // intital user
 export const initialState = {
-  isOpen: false,
+  profileIsOpen: false,
+  resumeIsOpen: false,
+  portfolioIsOpen: false,
 };
 
 // setting up user layer
-export const actionTypes = {
-    SET_OPEN : "SET_OPEN",
-};
+// export const actionTypes = {
+//     SET_OPEN : "SET_OPEN",
+// };
 
 const reducer = (state, action) => {
 
   switch (action.type) {
-    case actionTypes.SET_OPEN:
+    case "SET_PROFILE":
       return {
         ...state, 
-        isOpen: action.isOpen,
+        profileIsOpen: action.profileIsOpen,
+      };
+    case "SET_RESUME":
+      return {
+        ...state, 
+        resumeIsOpen: action.resumeIsOpen,
+      };
+    case "SET_PORTFOLIO":
+      return {
+        ...state, 
+        portfolioIsOpen: action.portfolioIsOpen,
       };
     
     default:

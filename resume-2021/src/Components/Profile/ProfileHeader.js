@@ -1,6 +1,8 @@
 import React from "react";
+import { useStateValue } from "../../StateManagement/StateProvider";
 
 function ProfileHeader() {
+  const [{ isOpen }] = useStateValue();
   return (
     <div className="profile__header">
       <div className="profile__left">
@@ -17,7 +19,7 @@ function ProfileHeader() {
         </div>
       </div>
 
-      <div className="profile__right">
+      <div className={isOpen ? "isOpen profile__right" : "profile__right"}>
         <ul>
           <li>Name: Sanjay Shrestha</li>
           <li>Exp Years: 5 Years</li>
