@@ -3,6 +3,7 @@
     opacity: 1;    
 }
 
+
 /******************************** Header & Body of Accordion Container */
 .accordion__Section__header {
     position: relative;
@@ -11,7 +12,7 @@
 }
 
 .accordion__body {
-    padding: 0 24px;
+    padding: 0 24px ;    
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -32,6 +33,9 @@
 
 .accordion__name {
     display: flex;
+}
+.accordion__name:hover {
+    background-color: #fafafa;
 }
 
 .accordion__title {    

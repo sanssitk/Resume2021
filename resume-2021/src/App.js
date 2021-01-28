@@ -2,6 +2,7 @@ import "./App.css";
 import Profile from "./Components/Profile/Profile";
 import Resume from "./Components/Resume/Resume";
 import Portfolio from "./Components/Portfolio/Portfolio";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Resume />
         <Portfolio />
       </div>
+      <Footer />
     </div>
   );
 }

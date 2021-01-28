@@ -1,0 +1,17 @@
+.footer{
+    width: 52%;
+    margin: 0 auto;
+    color: aqua;
+    font-size: 14px;
+}
+.footer > p > a{
+    color: aqua;
+    text-decoration: none;
+    line-height: 1.2rem;
+}
+
+.legal__title{
+    color: #9b9b9b;
+    text-align: right;
+    margin-top: 25px;
+}
