@@ -3,13 +3,20 @@ import { useStateValue } from "../../StateManagement/StateProvider";
 
 function ProfileHeader() {
   const [{ profileIsOpen }] = useStateValue();
+  
+  const profileImgStyle = () => {
+    const profileImg = {height : ""};
+    profileIsOpen ? profileImg.height = "120px" : profileImg.height = "95px";
+    return profileImg;
+  }
   return (
     <div className="profile__header">
       <div className="profile__left">
         <div className="profile__image">
-          <img            
+          <img
             src={process.env.PUBLIC_URL + "sanjay.jpg"}
             alt="profileImage"
+            style={profileImgStyle()}
           />
         </div>
 
@@ -19,7 +26,9 @@ function ProfileHeader() {
         </div>
       </div>
 
-      <div className={profileIsOpen ? "isOpen profile__right" : "profile__right"}>
+      <div
+        className={profileIsOpen ? "isOpen profile__right" : "profile__right"}
+      >
         <ul>
           <li>Name: Sanjay Shrestha</li>
           <li>Exp Years: 5 Years</li>
