@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useStateValue } from "../../StateManagement/StateProvider";
 
 function ProgressBar({ bgcolor, completed, title }) {
-  const [animate, setAnimate] = useState(0);  
-  const [{ resumeIsOpen }] = useStateValue();  
-
+  const [animate, setAnimate] = useState(0);
   useEffect(() => {
     setInterval(() => {    
       setAnimate(completed);
-    }, 2000);
+    }, 500);
   }, []);
 
   const containerStyles = {

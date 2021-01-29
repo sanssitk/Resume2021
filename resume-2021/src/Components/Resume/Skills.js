@@ -1,24 +1,28 @@
 import React from "react";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import { useStateValue } from "../../StateManagement/StateProvider";
+import { skills } from "./SkillsData"
 
 function Skills() {
-  const testData = [
-    { title: "React", bgcolor: "#6a1b9a", completed: 60 },
-    { title: "Angular", bgcolor: "#00695c", completed: 30 },
-    { title: "VeuJs", bgcolor: "#ef6c00", completed: 53 },
-  ];
+  const [{ resumeIsOpen }] = useStateValue();
 
   return (
-    <div className="skills">
-      {testData.map((item, index) => (
-        <ProgressBar
-          key={index}
-          title={item.title}
-          bgcolor={item.bgcolor}
-          completed={item.completed}
-        />
-      ))}
-    </div>
+    <>
+      {resumeIsOpen ? (
+        <div className="skills">
+          {skills.map((item, index) => (
+            <ProgressBar
+              key={index}
+              title={item.title}
+              bgcolor={item.bgcolor}
+              completed={item.completed}
+            />
+          ))}
+        </div>
+      ) : (
+        " "
+      )}
+    </>
   );
 }
 

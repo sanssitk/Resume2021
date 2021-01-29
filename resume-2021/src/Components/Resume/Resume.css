@@ -11,7 +11,7 @@
 }
 
 .employment__header {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     border-radius: 6px 0 0 6px;
     font-size: 0.9rem;
     padding: 5px 2rem;
@@ -19,14 +19,18 @@
     font-weight: 600;
     color: white;
     border-right: 5px;
-    background: linear-gradient(90deg, rgba(55, 55, 55, 1) 6%, rgba(76, 165, 208, 1) 6%);
+    /* background: linear-gradient(90deg, rgba(55, 55, 55, 1) 6%, rgba(76, 165, 208, 1) 6%); */
 }
 
 .bulletpoint {
     border-radius: 3px;
-    background-color: rgb(76, 165, 208);
+    /* background-color: rgb(76, 165, 208); */
     padding: 3px;
     margin-right: 8px;
+}
+
+.employment__historyContainer{
+    margin-bottom: 32px;
 }
 
 .employment__detailheader {
@@ -37,6 +41,11 @@
 
 .employment {
     display: flex;
+}
+
+.employment__titles>h4{
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .employment__titles>p {
@@ -52,6 +61,9 @@
 
 .employment__details {
     font-size: 16px;
+    color: #909090;
+    font-size: 15px;
+    line-height: 1rem;
 }
 
 /****************************************************** Skills */
