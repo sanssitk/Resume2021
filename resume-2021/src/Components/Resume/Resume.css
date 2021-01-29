@@ -1,3 +1,60 @@
-.resume{
-    color: blue;
+.resume__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+
+}
+
+/****************************************************** Employments */
+.employments {
+    flex: 0.66;
+}
+
+.employment__header {
+    margin-bottom: 24px;
+    border-radius: 6px 0 0 6px;
+    font-size: 0.9rem;
+    padding: 5px 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    border-right: 5px;
+    background: linear-gradient(90deg, rgba(55, 55, 55, 1) 6%, rgba(76, 165, 208, 1) 6%);
+}
+
+.bulletpoint {
+    border-radius: 3px;
+    background-color: rgb(76, 165, 208);
+    padding: 3px;
+    margin-right: 8px;
+}
+
+.employment__detailheader {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.employment {
+    display: flex;
+}
+
+.employment__titles>p {
+    font-size: 15px;
+    color: #9b9b9b;
+}
+
+.employment__period {
+    font-size: 18px;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+
+.employment__details {
+    font-size: 16px;
+}
+
+/****************************************************** Skills */
+.skills {
+    flex: 0.28;
 }
