@@ -8,7 +8,8 @@ ul > li {
   list-style: none;  
 }
 body {
-  background-color: #6f7165;
+  /* background-color: #6f7165; */
+  background: #333;
   margin: 0;
   scrollbar-width: none;
   -ms-overflow-style: none;

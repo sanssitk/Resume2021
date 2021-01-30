@@ -70,3 +70,73 @@
 .skills {
     flex: 0.28;
 }
+.skills > h2 {
+    font-size: 0.9rem;
+    color: #575757;
+    text-transform: uppercase;    
+    border-bottom: 2px solid #373737;
+    margin-bottom: 0.8rem;
+    padding-bottom: 3px;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 8px;    
+}
+.row > p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+    text-transform: uppercase;
+}
+
+.buttleticon{
+    padding: 4px;
+    margin-right: 8px;
+}
+
+/***************************************** Circular Progress */
+/* .circular__progress__div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+.circularProgress__container{
+    /* display: block;
+    margin: 20px auto; */
+    max-width: 100%;
+    max-height: 65px;
+}
+
+.circle-bg, .circle {
+    fill: none;
+    transition: all .5s ease;
+}
+
+.percentage{
+    font-size: 0.8rem;
+    text-anchor: middle;    
+    fill: black;
+    font-weight: bold;    
+}
+/* .circular__progress__div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.circularProgress__container{   
+    max-width: 100%;
+    max-height: 65px;
+}
+
+.circle {
+    fill: none;
+    transition: all .5s ease;
+}
+
+.percentage{
+    font-size: 0.8rem;
+    text-anchor: middle;    
+    fill: #fff;
+    font-weight: bold;    
+} */

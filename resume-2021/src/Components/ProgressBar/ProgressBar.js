@@ -3,18 +3,18 @@ import React, { useEffect, useState } from "react";
 function ProgressBar({ bgcolor, completed, title }) {
   const [animate, setAnimate] = useState(0);
   useEffect(() => {
-    setInterval(() => {    
+    setInterval(() => {
       setAnimate(completed);
     }, 500);
   }, []);
 
   const containerStyles = {
-    height: 20,
+    height: 15,
     width: "100%",
     backgroundColor: "#e0e0de",
     borderRadius: 5,
     marginTop: 3,
-    marginBottom: 3,
+    marginBottom: 10,
   };
   const fillerStyles = {
     height: "100%",
@@ -29,12 +29,14 @@ function ProgressBar({ bgcolor, completed, title }) {
     marginRight: 10,
     color: "white",
     fontWeight: "bold",
-    fontSize: 14,
+    fontSize: 12,    
   };
+
+  const labletitle = { fontSize: 12, fontWeight: 500, color: "#646464", paddingBottom: 2, };
 
   return (
     <div className="progressbar" style={{ margin: "10px 0" }}>
-      <h4 style={{ fontSize: 16, fontWeight: 500 }}>{title}</h4>
+      <h4 style={labletitle}>{title}</h4>
       <div style={containerStyles}>
         <div style={fillerStyles}>
           <p style={labelStyles}>{`${animate}%`}</p>
