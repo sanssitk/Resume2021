@@ -96,16 +96,16 @@
 }
 
 /***************************************** Circular Progress */
-/* .circular__progress__div{
+.circular__progress__div{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
+    justify-content: center;
+    
+}
 .circularProgress__container{
     /* display: block;
     margin: 20px auto; */
     max-width: 100%;
-    max-height: 65px;
+    /* max-height: 65px; */
 }
 
 .circle-bg, .circle {
@@ -116,7 +116,7 @@
 .percentage{
     font-size: 0.8rem;
     text-anchor: middle;    
-    fill: black;
+    fill: rgb(100, 100, 100);;
     font-weight: bold;    
 }
 /* .circular__progress__div{
