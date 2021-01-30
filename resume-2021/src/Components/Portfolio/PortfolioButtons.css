@@ -1,0 +1,43 @@
+.portfolioButtons__wrapper {    
+    position: relative;
+    width: 100px; 
+    display: flex;    
+    justify-content: center;    
+    margin-right: 5px;   
+}
+
+.portfolioButtons__wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+
+.shape {
+    fill: transparent;
+    stroke-dasharray: 82 185;
+    stroke-dashoffset: -425;
+    stroke-width: 6px;    
+}
+
+.text {
+    color: black;    
+    font-size: 22px;
+    /* letter-spacing: 5px; */
+    /* line-height: 32px; */
+    position: absolute;
+    top: 10px;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 60 620;
+        stroke-dashoffset: -474;
+        stroke-width: 10px;
+    }
+
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 4px;
+    }
+}
+

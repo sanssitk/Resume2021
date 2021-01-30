@@ -1,3 +1,4 @@
-.portfolio{
-    color: blue;
+.profileBody{
+    display: flex; 
+    padding: 24px 0; 
 }

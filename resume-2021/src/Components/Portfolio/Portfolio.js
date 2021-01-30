@@ -1,19 +1,18 @@
 import React from "react";
 import "./Portfolio.css";
 import Accordion from "../Accordion/Accordion";
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import PortfolioBody from "./PortfolioBody";
 
 function Portfolio() {
   return (
-    
-    <Accordion    
+    <Accordion
       color="#ffbc38"
       icon={<BusinessCenterIcon />}
       title="Portfolio"
       header=""
-      body="PortfolioBody"
+      body={<PortfolioBody />}
     />
-    
   );
 }
 
