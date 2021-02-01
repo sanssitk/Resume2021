@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./PortfolioButtons.css";
-function PortfolioButtons({ border }) {
+function PortfolioButtons({ buttonName }) {
+  const widthDIV = useRef(null);
+  const [width, setWidth] = useState();
+
+  useEffect(() => {
+    const xlen = widthDIV.current.clientWidth + 40;
+    setWidth(xlen);
+  }, []);
+
   return (
     <div className="portfolioButtons__wrapper">
-      <svg height="50" width="100" xmlns="http://www.w3.org/2000/svg">
+      <svg height="40" width={width} xmlns="http://www.w3.org/2000/svg">
         <rect
           className="shape"
-          height="50"
-          width="100"
-          style={{ stroke: `${border}` }}
+          height="40"
+          width={width}
+          style={{ stroke: "rgb(255, 188, 56)" }}
+          strokeLinecap="round"
+          strokeDasharray={`${width} 500`}
+          strokeDashoffset={-width - 40}
         />
       </svg>
-      <div className="text">HOME</div>
+      <div ref={widthDIV} className="text">
+        {buttonName}
+      </div>
     </div>
   );
 }
