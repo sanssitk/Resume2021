@@ -7,6 +7,9 @@ function ResumeBody() {
     <div className="resume__body">
       <Employments />
       <Skills />
+      
+
+
     </div>
   );
 }

@@ -23,9 +23,9 @@ export const mobSkills = [
 ];
 
 export const designSkills = [
-{ title: "Adobe Photoshop", bgcolor: "#327ea3", completed: 99 },
-{ title: "Web Design", bgcolor: "#4ca5d0", completed: 99 },
-{ title: "Mobile Responsive Design", bgcolor: "#6ca338", completed: 85 },
-{ title: "Pixel Perfect Design", bgcolor: "#ffbc38", completed: 85 },
-{ title: "Front-end UI/UX Design", bgcolor: "#e82c0c", completed: 85 },
+{ title: "Adobe Photoshop", bgcolor: "#327ea3", completed: 85 },
+{ title: "Web Design", bgcolor: "#4ca5d0", completed: 90 },
+{ title: "Mobile Responsive Design", bgcolor: "#6ca338", completed: 45 },
+{ title: "Pixel Perfect Design", bgcolor: "#ffbc38", completed: 95 },
+{ title: "Front-end UI/UX Design", bgcolor: "#e82c0c", completed: 95 },
 ];

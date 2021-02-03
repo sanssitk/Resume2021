@@ -15,7 +15,7 @@ function Skills() {
           <h2>web skills</h2>
           {webSkills.map((item, index) => (
             <ProgressBar
-              key={index}
+              key={item.title}
               title={item.title}
               bgcolor={item.bgcolor}
               completed={item.completed}
@@ -25,7 +25,7 @@ function Skills() {
           <h2>mob skills</h2>
           {mobSkills.map((item, index) => (
             <ProgressBar
-              key={index}
+              key={item.title}
               title={item.title}
               bgcolor={item.bgcolor}
               completed={item.completed}
@@ -34,26 +34,16 @@ function Skills() {
           <br />
           <h2>design skills</h2>
           {designSkills.map((item, index) => (
-            <Design
-              key={index}
-              title={item.title}
-              bgcolor={item.bgcolor}
-              completed={item.completed}
-            />
-          ))}
-          <br />
-          {/* <div className="circular__progress__div">
-            {designSkills.map((item, index) => (
-              <CircularProgress
-                key={index}
+            <div className="designSkill_container" key={index}>
+              <CircularProgress                
                 bgcolor={item.bgcolor}
                 completed={item.completed}
               />
-            ))}
-          </div> */}
-          <div className="circular__progress__div">
-            <CircularProgress />
-          </div>
+              <div className="buttleticon" style={{ background: `${item.bgcolor}` }} />
+              <Design title={item.title} />
+            </div>
+          ))}
+          <br />
         </div>
       ) : (
         " "
@@ -63,3 +53,15 @@ function Skills() {
 }
 
 export default Skills;
+
+{
+  /* <div className="circular__progress__div">
+            {designSkills.map((item, index) => (              
+              <CircularProgress
+                key={index}
+                bgcolor={item.bgcolor}
+                completed={item.completed}
+              />
+            ))}
+          </div> */
+}

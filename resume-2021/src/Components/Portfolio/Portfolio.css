@@ -1,4 +1,64 @@
-.profileBody{
-    display: flex; 
-    padding: 24px 0; 
+.profileBody {
+    padding: 24px 0;
 }
+
+.buttons>ul {
+    display: flex;
+}
+
+/* Isotope */
+.gallery__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    overflow: hidden;    
+}
+
+.filter-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    height: 170px;
+    margin: 0 8px 8px 0;     
+}
+
+.filter-item > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/******************************************** Pagination */
+.pagination {
+    list-style: none;
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.page_item {
+    margin-right: 5px;
+}
+
+.page_link:hover {
+    background-color: #e5e5e5;    
+}
+
+.page_link {
+    outline: none;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: gray;
+    text-decoration: none;
+}
+
+.page_link.page_active{
+    background-color: #e5e5e5;
+        
+}
+
+
+
