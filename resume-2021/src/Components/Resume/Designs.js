@@ -1,17 +1,6 @@
 import React from "react";
-
-function Designs({ title, bgcolor, completed }) {
-  return (
-    <div className="design">
-      <div className="row">
-        <div
-          className="buttleticon"
-          style={{ background: `${bgcolor}`}}
-        />
-        <p>{title}</p>
-      </div>
-    </div>
-  );
+function Designs({ title }) {
+  return <h2>{title}</h2>;
 }
 
 export default Designs;

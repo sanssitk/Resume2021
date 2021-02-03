@@ -20,8 +20,9 @@ function CircularProgress({ bgcolor, completed }) {
       setOffset(progressOffset);
     }, 1500);
     circleRef.current.style = "transition: stroke-dashoffset 2.5s ease-in-out";
-    return () => clearInterval();    
+    clearInterval();    
   }, [setOffset, progress, circumference, offset]);
+  // }, [setOffset, progress, circumference, offset]);
 
   return (
     <div className="circularProgress__container">
