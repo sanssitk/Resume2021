@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Profile.css";
 import PersonIcon from "@material-ui/icons/Person";
 import Accordion from "../Accordion/Accordion";

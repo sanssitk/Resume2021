@@ -3,16 +3,14 @@ import PortfolioButtons from "./PortfolioButtons";
 // import { useStateValue } from "../../StateManagement/StateProvider";
 import { portfolioButtons } from "./PortfolioDatas";
 import { portfolioGallery } from "./PortfolioDatas";
+import Gallery from "./Gallery";
 import "./Portfolio.css";
-
 //ISOTOPE
 import Isotope from "isotope-layout";
-import Pagination from "./Pagination";
 
-function PortfolioBody() {
-  const [height, setHeight] = useState("350px");
+function PortfolioBody() {  
   // store the isotope object in one state
-  const [isotope, setIsotope] = useState(null);
+  const [isotope, setIsotope] = useState(null);  
   // store the filter keyword in another state
   const [filterKey, setFilterKey] = useState("*");
   const [activebutton, setActivebutton] = useState("all");
@@ -25,15 +23,15 @@ function PortfolioBody() {
         itemSelector: ".filter-item",
         layoutMode: "fitRows",
         stagger: 50,
-        transitionDuration: '0.8s',
+        transitionDuration: "0.8s",
         hiddenStyle: {
           opacity: 0,
-          transform: 'scale(0.001)'
+          transform: "scale(0.001)",
         },
         visibleStyle: {
           opacity: 1,
-          transform: 'scale(1)'
-        }
+          transform: "scale(1)",
+        },
       })
     );
   }, []);
@@ -61,11 +59,20 @@ function PortfolioBody() {
     }
   };
 
+  // get current imgs
+  // if (isotope && filterKey === "*") {
+  //   const indexOfLastPost = currentPage * postsPerPage;
+  //   const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  //   const currentPosts = isotope.items.slice(indexOfFirstPost, indexOfLastPost);
+  //   //Change page
+  //   const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  // }
+
   return (
     <div className="profileBody">
       <div className="buttons">
         <ul>
-          {portfolioButtons.buttons.map((button, index) => (
+          {portfolioButtons.map((button, index) => (
             <li key={index} value={button} onClick={handleClickButton}>
               <PortfolioButtons
                 buttonName={button}
@@ -75,43 +82,30 @@ function PortfolioBody() {
           ))}
         </ul>
       </div>
-      <div className="gallery__container" style={{ maxHeight: `${height}` }}>
-        {portfolioGallery.ecommerce.map((ecm, index) => (
-          <div key={ecm + index} className="filter-item ecommerce">
-            <img src={ecm} alt="" />
-          </div>
-        ))}
-        {portfolioGallery.javascript.map((js, index) => (
-          <div key={js + index} className="filter-item javascript">
-            <img src={js} alt="" />
-          </div>
-        ))}
-        {portfolioGallery.react.map((rea, index) => (
-          <div key={rea + index} className="filter-item react">
-            <img src={rea} alt="" />
-          </div>
-        ))}
-        {portfolioGallery.angular.map((ang, index) => (
-          <div key={ang + index} className="filter-item angular">
-            <img src={ang} alt="" />
-          </div>
-        ))}
-        {portfolioGallery.wordpress.map((wor, index) => (
-          <div key={wor + index} className="filter-item wordpress-cms">
-            <img src={wor} alt="" />
-          </div>
+      <div
+        className="gallery__container"
+        style={{ maxHeight: "350px", transition: "height 0.6s ease" }}
+      >
+        {Object.entries(portfolioGallery).map((title, index) => (
+          <Gallery
+            key={title[0] + index}
+            classname={`filter-item ${title[0]}`}
+            imgs={title[1]}
+          />
         ))}
       </div>
-    {/************************************************************* Pagination */}
-    {filter === "all" && (
+
+      {/************************************************************* Pagination */}
+      {activebutton === "all" && (
         <div className="portfolio__navigator">
-          <Pagination
-            postsPerPage={postsPerPage}
-            totalPosts={projects.length}
-            paginate={paginate}
-            currentPage={currentPage}
-          />
-          <div className="page__number">{`Page:  ${currentPage} of 4`}</div>
+          <div className="pagination">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+          </div>
+          <div className="page__number">Page: 1 of 4</div>
         </div>
       )}
     </div>

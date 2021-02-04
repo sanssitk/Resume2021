@@ -6,7 +6,7 @@ function ProgressBar({ bgcolor, completed, title }) {
     setInterval(() => {
       setAnimate(completed);
     }, 500);
-  }, []);
+  }, [completed]);
 
   const containerStyles = {
     height: 15,

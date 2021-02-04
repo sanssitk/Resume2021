@@ -1,18 +1,15 @@
-// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-// import React from "react";
-// import "./Gallery.css";
-// import { portfolioGallery } from "./PortfolioDatas";
+import React from "react";
 
-// function Gallery() {
-//   return (
-//     <div className="gallery__container">
-//       {portfolioGallery.javascript.map((jsImg) => (
-//         <div className="single__Gallery">
-//           <img src={jsImg} alt="" />
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
+function Gallery({ imgs, classname }) {
+  return (
+    <>
+      {imgs.map((img, index) => (
+        <div key={index} className={classname}>
+          <img src={img} alt="" />
+        </div>
+      ))}
+    </>
+  );
+}
 
-// export default Gallery;
+export default Gallery;
