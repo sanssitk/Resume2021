@@ -120,18 +120,18 @@ function PortfolioBody() {
       {activebutton === "all" && (
         <div className="portfolio__navigator">
           <ReactPaginate
-            previousLabel="Previous"
+            previousLabel="Prev"
             nextLabel="Next"
             pageCount={pageCount}
             onPageChange={changePage}
             containerClassName="paginationBttns"
-            previousClassName="previousBttn"
-            nextLinkClassName="nextBttn"
+            // previousClassName="previousBttn"
+            // nextLinkClassName="nextBttn"
             disabledClassName="paginationDisabled"
             activeClassName="paginationActive"
           />
 
-          <div className="page__number">Page: {pageNumber+1} of 4</div>
+          <div className="page__number">Page: {pageNumber+1} of {pageCount}</div>
         </div>
       )}
     </div>

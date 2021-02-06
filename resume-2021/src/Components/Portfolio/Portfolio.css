@@ -37,16 +37,31 @@
     margin-top: 24px;
     justify-content: space-between;
 }
-.pagination {
-    display: flex;        
+.paginationBttns {
+    display: flex;  
+    cursor: pointer;
+    justify-content: center;   
+    text-align: center;
 }
 
-.pagination > button{
+.paginationBttns > li{    
+    list-style: none;    
+    border: 2px solid rgb(255, 188, 56); 
+    margin-right: -2px;   
+}
+.paginationBttns > li > a{
+    line-height: 32px;           
     font-size: 16px;
-    padding: 4px 8px;
-    margin-right: 2px;
-    border: none;
+    font-weight: 500;    
     outline-style: none;
+    padding: 4px 8px;
+}
+
+.paginationActive{
+    background-color: rgb(255, 188, 56);
+}
+.paginationDisabled{
+    background-color: rgba(255, 189, 56, 0.4);    
 }
 
 .page__number{

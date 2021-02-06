@@ -9,18 +9,18 @@ const wrdLink = "projects/Wordpress/Wordpress";
 
 export const portfolioGallery = 
 {
-  ecommerce: [
+  "ecommerce": [
     `${url}${emcLink}1.jpeg`,
     `${url}${emcLink}2.jpg`,
     `${url}${emcLink}3.jpg`,
   ],
-  javascript: [
+  "javascript": [
     `${url}${jsLink}1.jpg`,
     `${url}${jsLink}2.jpg`,
     `${url}${jsLink}3.png`,
     `${url}${jsLink}4.png`,
   ],
-  react: [
+  "react": [
     `${url}${recLink}1.png`,
     `${url}${recLink}2.jpg`,
     `${url}${recLink}3.jpg`,
@@ -28,7 +28,7 @@ export const portfolioGallery =
     `${url}${recLink}5.jpeg`,
     `${url}${recLink}6.png`,
   ],
-  angular: [
+  "angular": [
     `${url}${angLink}1.png`,
     `${url}${angLink}2.png`,
     `${url}${angLink}3.png`,

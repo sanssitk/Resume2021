@@ -53,15 +53,3 @@ function Skills() {
 }
 
 export default Skills;
-
-{
-  /* <div className="circular__progress__div">
-            {designSkills.map((item, index) => (              
-              <CircularProgress
-                key={index}
-                bgcolor={item.bgcolor}
-                completed={item.completed}
-              />
-            ))}
-          </div> */
-}
