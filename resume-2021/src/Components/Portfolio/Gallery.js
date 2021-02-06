@@ -1,6 +1,6 @@
 import React from "react";
 
-function Gallery({ imgs, classname }) {
+function Gallery({ imgs, classname }) {  
   return (
     <>
       {imgs.map((img, index) => (
