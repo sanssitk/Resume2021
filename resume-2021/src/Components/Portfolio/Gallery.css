@@ -1,0 +1,45 @@
+/* Shadow Radial Effect on Hover */
+.gallerycollections {
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0); 
+    transform: perspective(1px) translateZ(0);    
+}
+
+.gallerycollections::before {
+    content: "";
+    position: absolute;   
+    width: 100%;
+    height: 100%;    
+    background: black;
+    opacity: 0.75;
+    transform: scale(0) ;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0%;
+    transform-origin: 0%;
+    -webkit-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;    
+}
+
+.gallerycollections:hover:before,
+.gallerycollections:focus:before,
+.gallerycollections:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);   
+}
+
+.labelText {
+    color: white;
+    font-weight: 500;    
+    text-transform: uppercase;
+
+    z-index: -1;       
+    transition: all 0.5s ease-in;    
+}
+
+.gallerycollections:hover>.labelText {
+    z-index: 100;
+    position: absolute;     
+    top: 16px;
+    left: 16px;
+}

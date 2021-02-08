@@ -19,6 +19,8 @@
 }
 
 .isOpen.profile__right {
+    font-size: 16px;
+    line-height: 1.2rem;
     margin-right: 50px;
     opacity: 1;
     height: fit-content;
@@ -56,6 +58,6 @@
 
 /************************************* Profile BOdy */
 .profile__body{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 24px;
 }

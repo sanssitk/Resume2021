@@ -5,7 +5,7 @@ function PortfolioButtons({ buttonName, activeButton }) {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    const xlen = widthDIV.current.clientWidth + 40;
+    const xlen = widthDIV.current.clientWidth + 16;
     setWidth(xlen);
   }, [width]);
 

@@ -19,9 +19,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     width: 31%;
     height: 170px;
-    margin: 0 8px 8px 0;     
+    margin: 0 16px 16px 0;     
 }
 
 .filter-item > img {
@@ -29,6 +30,15 @@
     width: 100%;
     object-fit: cover;
 }
+
+/****************************************************** Gallery Effect */
+/* .gallery__container:hover img {
+    opacity: 0.3;
+}
+
+.gallery__container:hover>.middle {
+    opacity: 0.4;
+} */
 
 /******************************************** Pagination */
 .portfolio__navigator{

@@ -14,7 +14,7 @@ function ProgressBar({ bgcolor, completed, title }) {
     backgroundColor: "#e0e0de",
     borderRadius: 5,
     marginTop: 3,
-    marginBottom: 10,
+    marginBottom: 8,
   };
   const fillerStyles = {
     height: "100%",
@@ -35,7 +35,7 @@ function ProgressBar({ bgcolor, completed, title }) {
   const labletitle = { fontSize: 12, fontWeight: 500, color: "#646464", paddingBottom: 2, };
 
   return (
-    <div className="progressbar" style={{ margin: "10px 0" }}>
+    <div className="progressbar" >
       <h4 style={labletitle}>{title}</h4>
       <div style={containerStyles}>
         <div style={fillerStyles}>

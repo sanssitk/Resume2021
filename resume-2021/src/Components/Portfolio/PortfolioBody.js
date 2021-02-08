@@ -105,7 +105,7 @@ function PortfolioBody() {
       <div
         ref={galleryContainer}
         className="gallery__container"
-        style={{ maxHeight: "350px", transition: "height 0.6s ease" }}
+        style={{ maxHeight: "370px", transition: "height 0.6s ease" }}
       >
         {Object.entries(portfolioGallery).map((title, index) => (
           <Gallery
