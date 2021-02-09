@@ -5,6 +5,13 @@
     margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 750px) {
+    .app {        
+        width: 95%;
+        margin: 0 auto;        
+    }
+  }
+
 .body-container {    
     width: 52%;
     margin: 0 auto;
