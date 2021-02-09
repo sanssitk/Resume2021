@@ -73,7 +73,6 @@
     padding: 0 1.2rem;    
 }
 
-
 .chevron {
     cursor: pointer;
     position: absolute;
@@ -99,6 +98,11 @@
     font-size: 1.8rem;
     font-weight: bold;
     padding: 3px;
+    transform: rotate(0);
+    transition: transform 0.5s ease-out;
+}
+.chevron.chevronActive>svg {
+    transform: rotate(180deg);
 }
 
 /******************************** Profile heading container for profile only */

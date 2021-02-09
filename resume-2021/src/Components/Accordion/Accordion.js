@@ -92,7 +92,7 @@ function Accordion(props) {
               <div className="accordion__title_close">{props.title}</div>
             )}
           </div>
-          <Chevron />
+          <Chevron name={props.title}/>
         </div>
         {props.header}
       </div>
