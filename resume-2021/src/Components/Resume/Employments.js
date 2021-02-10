@@ -14,7 +14,7 @@ function Employments() {
             {employee.field}
           </div>
           {employee.details.map((detail) => (
-            <div className="employment__historyContainer" key={detail.id}>
+            <div key={detail.id} className="employment__historyContainer">
               <div className="employment__detailheader">
                 <div className="employment">
                   <div

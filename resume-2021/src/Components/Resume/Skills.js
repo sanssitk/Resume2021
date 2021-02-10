@@ -34,10 +34,11 @@ function Skills() {
           <br />
           <h2>design skills</h2>
           {designSkills.map((item, index) => (
-            <div className="designSkill_container" key={index}>
+            <div className="designSkill_container" key={item.title}>
               <CircularProgress                
                 bgcolor={item.bgcolor}
                 completed={item.completed}
+                key={item.title}
               />
               <div className="buttleticon" style={{ background: `${item.bgcolor}` }} />
               <Design title={item.title} />

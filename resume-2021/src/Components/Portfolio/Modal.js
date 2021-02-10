@@ -20,9 +20,10 @@ const Modal = forwardRef((props, ref) => {
   const open = () => {
     setIsOpen(true);
   };
-  const close = () => {
-    setIsOpen(false);
+  const close = () => {    
+    setIsOpen(false);    
   };
+  
 
   if (isOpen) {
     return ReactDOM.createPortal(

@@ -8,6 +8,7 @@ import "./Portfolio.css";
 //ISOTOPE
 import Isotope from "isotope-layout";
 import ReactPaginate from "react-paginate";
+import { SRLWrapper } from "simple-react-lightbox";
 
 function PortfolioBody() {
   const galleryContainer = useRef(null);
@@ -88,6 +89,22 @@ function PortfolioBody() {
     setPageNumber(selected);
   };
 
+  const options = {
+    buttons: {
+      backgroundColor: 'rgba(30,30,36,0.8)',
+      iconColor: 'rgba(255, 255, 255, 0.8)',
+      iconPadding: '10px',
+      showAutoplayButton: false,
+      showCloseButton: true,
+      showDownloadButton: false,
+      showFullscreenButton: false,
+      showNextButton: true,
+      showPrevButton: true,
+      showThumbnailsButton: true,
+      size: '40px'
+    }
+}
+
   return (
     <div className="profileBody">
       <div className="buttons">
@@ -102,19 +119,21 @@ function PortfolioBody() {
           ))}
         </ul>
       </div>
-      <div
-        ref={galleryContainer}
-        className="gallery__container"
-        style={{ maxHeight: "370px", transition: "height 0.6s ease" }}
-      >
-        {Object.entries(portfolioGallery).map((title, index) => (
-          <Gallery
-            key={title[0] + index}
-            classname={`filter-item ${title[0]}`}
-            imgs={title[1]}
-          />
-        ))}
-      </div>
+      <SRLWrapper options={options}>
+        <div
+          ref={galleryContainer}
+          className="gallery__container"
+          style={{ maxHeight: "370px", transition: "height 0.6s ease" }}
+        >
+          {Object.entries(portfolioGallery).map((title, index) => (
+            <Gallery
+              key={title[0] + index}
+              classname={`filter-item ${title[0]}`}
+              imgs={title[1]}              
+            />
+          ))}
+        </div>
+      </SRLWrapper>
 
       {/************************************************************* Pagination */}
       {activebutton === "all" && (
@@ -131,7 +150,9 @@ function PortfolioBody() {
             activeClassName="paginationActive"
           />
 
-          <div className="page__number">Page: {pageNumber+1} of {pageCount}</div>
+          <div className="page__number">
+            Page: {pageNumber + 1} of {pageCount}
+          </div>
         </div>
       )}
     </div>

@@ -7,38 +7,20 @@
 }
 
 /* Isotope */
-.gallery__container {
-    width: 100%;
+.gallery__container {    
     display: flex;
     flex-wrap: wrap;
     margin-top: 24px;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
-.filter-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.filter-item {    
+    background-color: grey;
     cursor: pointer;
     width: 31%;
     height: 170px;
     margin: 0 16px 16px 0;     
 }
-
-.filter-item > img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-/****************************************************** Gallery Effect */
-/* .gallery__container:hover img {
-    opacity: 0.3;
-}
-
-.gallery__container:hover>.middle {
-    opacity: 0.4;
-} */
 
 /******************************************** Pagination */
 .portfolio__navigator{

@@ -19,6 +19,7 @@
     "react-modal-image": "^2.5.0",
     "react-paginate": "^7.0.0",
     "react-scripts": "4.0.1",
+    "simple-react-lightbox": "^3.6.3",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
