@@ -69,7 +69,7 @@ function PortfolioBody() {
           })
         : isotope.arrange({ filter: `.${filterKey}` });
     }
-  }, [filterKey, isotope, pageNumber]);
+  }, [filterKey, pageNumber]);
 
   const handleClickButton = (e) => {
     const value = e.currentTarget.attributes.value.value;

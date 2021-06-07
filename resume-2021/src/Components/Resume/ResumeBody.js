@@ -6,6 +6,7 @@ function ResumeBody() {
   return (
     <div className="resume__body">
       <Employments />
+
       <Skills />
     </div>
   );

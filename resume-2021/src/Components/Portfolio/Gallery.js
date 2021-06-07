@@ -5,7 +5,7 @@ import "./Gallery.css";
 function Gallery({ imgs, classname }) {
   const labelText = classname.replace("filter-item", "");
   const imageId = useRef();
-  const { openLightbox, closeLightbox } = useLightbox();
+  const { openLightbox } = useLightbox();
 
   return imgs.map((img, index) => (
     <div

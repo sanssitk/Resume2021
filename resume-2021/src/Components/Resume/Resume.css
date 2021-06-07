@@ -1,7 +1,7 @@
 .resume__body {
     display: flex;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 24px 0 0 0;    
 }
 
 /****************************************************** Employments */
@@ -65,7 +65,7 @@
 
 /****************************************************** Skills */
 .skills {
-    flex: 0.28;
+    flex: 0.28;    
 }
 .skills > h2 {
     font-size: 0.9rem;

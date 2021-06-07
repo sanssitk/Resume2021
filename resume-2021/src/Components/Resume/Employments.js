@@ -4,8 +4,9 @@ function Employments() {
   return (
     <div className="employments">
       {employmentDatas.map((employee) => (
-        <div key={employee.field}>
+        <>
           <div
+            key={employee.field}
             className="employment__header"
             style={{
               background: `linear-gradient(90deg, ${employee.color} 6%, rgba(55, 55, 55, 1) 6%`,
@@ -36,7 +37,7 @@ function Employments() {
               <div className="employment__details">{detail.description}</div>
             </div>
           ))}
-        </div>
+        </>
       ))}
     </div>
   );

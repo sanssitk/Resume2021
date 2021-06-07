@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Responsive.css"
 import Profile from "./Components/Profile/Profile";
 import Resume from "./Components/Resume/Resume";
 import Portfolio from "./Components/Portfolio/Portfolio";
