@@ -1,6 +1,8 @@
-/* ******************************** Profile Container */
+/******************************** Profile heading container for profile only */
 .profile__header {
     display: flex;
+    align-items: center;
+    padding: 24px 42px;
     justify-content: space-between;
 }
 
@@ -16,6 +18,9 @@
     display: flex;  
     transform: rotate(180deg);
     transition: all 200ms ease;    
+}
+.profile__right > ul > li {
+    line-height: 1.6rem;;
 }
 
 .isOpen.profile__right {
@@ -58,6 +63,7 @@
 
 /************************************* Profile BOdy */
 .profile__body{
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 24px;
+    line-height: 1.4rem;
 }

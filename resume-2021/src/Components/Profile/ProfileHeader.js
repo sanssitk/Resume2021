@@ -31,7 +31,7 @@ function ProfileHeader() {
       >
         <ul>
           <li>Name: Sanjay Shrestha</li>
-          <li>Exp Years: 5 Years</li>
+          <li>Exp Years: 4 Years</li>
           <li>Location: Irving, Tx</li>
           <li>
             <a href="/">Download CV</a>

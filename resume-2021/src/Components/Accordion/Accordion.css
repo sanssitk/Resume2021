@@ -12,7 +12,7 @@
 }
 
 .accordion__body {
-    padding: 0 24px ;    
+    padding: 0 40px ;    
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -110,10 +110,4 @@
     transform: rotate(180deg);
 }
 
-/******************************** Profile heading container for profile only */
-.profile__header {
-    display: flex;
-    align-items: center;
-    padding: 24px;
-    justify-content: space-between;
-}
+
