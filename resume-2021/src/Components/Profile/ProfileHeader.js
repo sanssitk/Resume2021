@@ -34,7 +34,7 @@ function ProfileHeader() {
           <li>Exp Years: 4 Years</li>
           <li>Location: Irving, Tx</li>
           <li>
-            <a href="/">Download CV</a>
+            <a href={process.env.PUBLIC_URL + "Sanjay_Js_Resume2021.docx"}>Download CV</a>
           </li>
         </ul>
       </div>

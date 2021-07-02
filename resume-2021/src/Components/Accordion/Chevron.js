@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-function Chevron() {
-  const [isOpen, setIsOpen] = useState(false);
+function Chevron({ isOpen }) {
+
   const chevronRotate = () => {
-    setIsOpen(!isOpen);
+    isOpen = !isOpen;
   };
+
   return (
     <div
       onClick={chevronRotate}

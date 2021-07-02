@@ -28,7 +28,7 @@
 }
 
 .employment__historyContainer{
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .employment__detailheader {
@@ -52,7 +52,7 @@
 }
 
 .employment__period {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
     color: #9b9b9b;
 }
@@ -60,7 +60,7 @@
 .employment__details {
     font-size: 14px;
     color: #909090;    
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 
 /****************************************************** Skills */

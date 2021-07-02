@@ -4,7 +4,7 @@ function CircularProgress({ bgcolor, completed }) {
   const [offset, setOffset] = useState(132);
   const circleRef = useRef(null);
 
-  const size = 50;
+  const size = 40;
   const progress = completed;
   const stokeWidth = 8;
   const circleOneColor = "rgb(224, 224, 222)";

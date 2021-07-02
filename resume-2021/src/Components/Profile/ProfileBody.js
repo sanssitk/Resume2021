@@ -17,32 +17,31 @@ function ProfileBody() {
         ★★★★★★★★★★ <strong>Strong Skill Sets</strong> ★★★★★★★★★★<br></br>
         <strong>- Full Stack Web Development</strong>
         <br></br>
-        ReactJs with redux, Javascript, NodeJs, Express, SQL, NoSQL, RestApi
+        ReactJs with redux, Javascript, NodeJs, Express, SQL, NoSQL, RestApi,
+        Heroku, Glitch
         <br></br>
-        {/* Swift, Objective-C iOS Mobile, Java, Kotlin, Android Mobile{" "} */}
         <strong>- Cross Platform Mobile App</strong>
         <br></br>
-        React Native, Expo.io, Flutter(Google Mobile Engine)<br></br>
+        React Native, Flutter(Google Mobile Engine)<br></br>
         <strong>-Frontend Web Development </strong>
         <br></br>
-        ReactJS, HTML5, CSS3, SASS, JSON, XML, Jquery, Bootstrap, Matetrial
-        Icon, FontAwesome <br></br>
-        <strong>- MEAN, MERN Stack Development</strong>
+        ReactJS, HTML5, CSS3, SASS, JSON, XML, Jquery, Bootstrap, Matetrial UI,
+        FontAwesome <br></br>
+        <strong>- MERN Stack Development</strong>
         <br></br>
         Full Stack Development(React/Redux/ContextApi/Flutter, Node, MongoDB,
-        Firebase Express) <br></br>
+        Firebase, Express) <br></br>
         <strong>- Backend Development</strong>
         <br></br>
-        NodeJS, Express, Pusher, Cors<br></br>-
+        NodeJS, Express, Multer, Pusher, Cors<br></br>-
         <strong>CMS, e-Commerce, CRM</strong> <br></br>
-        Wordpress, Shopify, Bigcommerce site development & theme and plugin
-        customize<br></br>
+        Wordpress and Shopify theme development along with plugins customize
         <br></br>
-        ★★★★★★★★★★ <strong>Product Area</strong> ★★★★★★★★★★<br></br>- Wordpress
-        CMS, WooCommerce, Shopify, Squarespace, Wix, Webflow,<br></br>- CRM &
-        ERP Development, Customize<br></br>- Social networking, Messaging,
-        Videos & Music <br></br>- Health and Fitness<br></br>- Travel and Events
-        <br></br>- Ordering and Delivery<br></br>- Live streaming
+        <br></br>
+        ★★★★★★★★★★ <strong>Production Area</strong> ★★★★★★★★★★<br></br>-
+        Wordpress CMS, Shopify, Wix <br></br>- CRM & ERP Development, Customize.
+        <br></br>- Social networking, Messaging, Videos & Music <br></br>-
+        Health and Fitness
         <br></br>
         <br></br>
         ★★★★★★★★★★ <strong>Services</strong> ★★★★★★★★★★<br></br>- Fast/Reliable
@@ -51,7 +50,7 @@ function ProfileBody() {
         <br></br>
         With a strong research skill and focus, I know how to attack a problem
         and have the tenacity to solve even very hard problems using appropriate
-        debugging tools. 
+        debugging tools.
         <br></br>
       </p>
     </div>

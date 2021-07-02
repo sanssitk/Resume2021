@@ -1,8 +1,8 @@
 const text =
-    "Worked with lots of Web jobs for Upwork Clients :\n * Strong knowledge of OOP design patterns, Wireframes, and technologies. \n * Strong knowledge of NoSQL, SQL & Firebase technologies \n * Strong knowledge of automated testing methodologies (TDD, BDD). \n * Strong teamwork, leadership, and time management skills. \n * Experience with agile software development (Scrum, Kanban). \n * Experience with API integrations via REST or Microservices. \n * Excellent problem solving and debugging skills. \n * Passion for excellent technical documentation. \n";
-  const newText = text.split("\n").map((i) => {
-    return <p>{i}</p>;
-  });
+  "Worked with lots of Web jobs for Upwork Clients :\n * Participated with business analyst to understand the business requirement. \n * Built rich front-end user interactive (UI) using HTML5, CSS3, and Bootstrap. \n * Worked with Google and Facebook login Authentication using firebase. \n * Maintaining Parent and child elements by using State and Props in React.js.  \n * Build high quality, scalable and reusable components for front-end solutions. \n * Worked with debugging tools of Google Chrome and react developer tool. \n * Used React-Router to turn application into Single Page Application. \n * Called the Restful web services calls for POST, PUT, DELETE and GET methods. ";
+const newText = text.split("\n").map((i) => {
+  return <p>{i}</p>;
+});
 
 export default [
   {
@@ -13,35 +13,65 @@ export default [
         id: 1.1,
         title: "Full Stack Web application developer",
         company: "Upwork. (Part time Remote Work)",
-        start: "2017",
+        start: "2018",
         end: "Present",
-        description: newText,         
+        description: newText,
       },
       {
         id: 1.2,
-        title: "Web Application Developer",
-        company: "Mt. Everest Consulting",
-        start: "2018",
-        end: "2020",
-        description: "Build and support modern accessible websites and creative web ideas. Implement software development solutions for the web department and mobile app creation. Create automated processes that increase workflow speed.", 
-      },          
-      {
-        id: 1.3,
-        title: "Senior Software Engineer",
-        company: "DigitalFlow",
-        start: "2016",
+        title: "JavaScript Developer",
+        company: "KTM Rush",
+        start: "2015",
         end: "2017",
         description:
-          "Worked as a senior software engineer and I could successfully lead about 5 CMS and Commerce Projects from scratch to finish.",
+          "Handled Browser compatibility issues for different browsers related to CSS & HTML. Developed web applications using vanilla Js, Jquery, Bootstrap. Developed fully dynamic responsive web application using flexbox, grid and media query.	Created interface to manage user menu using JavaScript and JQuery. Worked on form and subscription validation. Successfully completed user end blog post web application using vanilla Js, nodeJs. Created a class object as a helper function.",
       },
       {
         id: 1.4,
-        title: "Software Engineer",
-        company: "Flex Solution",
-        start: "2014",
-        end: "2016",
+        title: "Web Design",
+        company: "DigitalFlow",
+        start: "2015",
+        end: "2015",
         description:
-          "Worked in some website projects, using NodeJs, ExpressJs for back-end development and Bootstrap, CSS, HTML5, Ajax/jQuery for front-end development.",
+          "Worked in few web projects using HTML5, CSS, JavaScript, Bootstrap, jQuery for front-end development. Created wire frame for the layout template and flow diagrams. Prepared documentation for application requirements. Set, enforced and optimized internal policies to maintain efficiency and responsive ness to demands.",
+      },
+    ],
+  },
+  {
+    field: "certification",
+    color: "#FF9800",
+    details: [
+      {
+        id: 3.4,
+        title: "Modern React Redux Mastery",
+        company: "Udemy E-Learning: UC-2D35JON",
+        start: "2020",
+        end: "2021",
+        description: "",
+      },
+      {
+        id: 3.1,
+        title: "Complete Web Application Bootcamp",
+        company: "Udemy E-Learning: UC-2D35JON",
+        start: "2018",
+        end: "2019",
+        description: "",
+      },
+      {
+        id: 3.2,
+        title: "Master JavaScript",
+        company: "Clever Programmer",
+        start: "2016",
+        end: "2016",
+        description: "",
+      },
+      {
+        id: 3.3,
+        title: "Web Design & Developer",
+        company: "MCIT",
+        start: "2015",
+        end: "2015",
+        description: "",
       },
     ],
   },
@@ -51,42 +81,12 @@ export default [
     details: [
       {
         id: 2.1,
-        title: "Makwanpur Multiple Campus",
+        title: "Tribhuwan University",
         company: "Bachelor Degree in Business Management (BBS)",
         start: "2009",
         end: "2013",
         description:
           "Have completed Bachelor Degree in Business Management (BBS) that provides an immersive hands-on curriculum with a focus on today's business.",
-      },
-    ],
-  },
-  {
-    field: "certification",
-    color: "#FF9800",
-    details: [
-      {
-        id: 3.1,
-        title: "React JS",
-        company: "Clever Programming Online",
-        start: "2018",
-        end: "Present",
-        description: "",
-      },
-      {
-        id: 3.2,
-        title: "Complete Web bootstrap",
-        company: "Udemy E-Learning: UC-2D35JON",
-        start: "2016",
-        end: "2016",
-        description: "",
-      },
-      {
-        id: 3.3,
-        title: "Web Developer and UI",
-        company: "MCIT",
-        start: "2012",
-        end: "2013",
-        description: "",
       },
     ],
   },
