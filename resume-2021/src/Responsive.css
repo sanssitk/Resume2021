@@ -1,5 +1,96 @@
-@media only screen and (max-width: 750px) {
-    .body-container {        
-        width: 70%;
+/* Ipad */
+@media screen and (max-width: 768px) {
+    .topNav {
+        width: 100%;
     }
-  }
+    .body-container {
+        width: 90%;
+        margin: 0 auto;
+        margin-left: 8%;
+    }
+    .body-container .accordion__Section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .profile__header {
+        padding: 20px;
+    }
+    .profile__image{
+        margin-right: 16px !important;
+    }
+    .isOpen.profile__right{
+        margin-right: 0;
+    }
+    .gallery__container {
+        width: 100%;
+        max-height: 230px !important;
+    }
+    .gallery__container .filter-item {
+        width: 31%;
+        height: 105px;
+        margin: 0 12px 12px 0;
+    }
+    .footer {
+        width: 100 !important;
+        /* margin-left: 70px !important; */
+    }
+
+    .legal__title {
+        text-align: left !important;
+    }
+    
+}
+
+/* Phone */
+@media screen and (max-width: 414px) {
+    .topNav {
+        width: 100%;
+    }
+    .body-container {
+        width: 90%;
+        margin-left: 12%;
+    }
+
+    .profile__header{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start !important;
+        padding: 16px 20px !important;
+    }
+
+    .profile__image{
+        margin-right: 12px !important;
+    }
+    .isOpen.profile__right{
+        margin-top: 12px;
+    }
+    .accordion__body {
+        padding: 0 16px !important;
+    }
+
+    .resume__body {
+        flex-direction: column-reverse;
+    }
+    .text {
+        font-size: 12px !important;
+        top: 20px !important;
+    }
+    .gallery__container  {
+        max-height: 515px !important;
+        margin-top: 14px !important;
+    }
+    .gallery__container .filter-item {
+        width: 90%;
+        height: 165px;
+        margin: 0 14px 8px 14px !important;
+    }
+
+    .footer {
+        width: 80% !important;
+        margin-left: 70px !important;
+    }
+
+    .legal__title {
+        text-align: left !important;
+    }
+}

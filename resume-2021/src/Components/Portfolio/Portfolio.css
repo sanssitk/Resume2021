@@ -4,6 +4,7 @@
 
 .buttons>ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 /* Isotope */
@@ -14,13 +15,14 @@
     overflow: hidden;
 }
 
-.filter-item {    
+.filter-item {  
+      
     background-color: grey;
     cursor: pointer;
     width: 31%;
     height: 170px;
     margin: 0 16px 16px 0;
-    /* border: 1px solid grey;      */
+
 }
 
 /******************************************** Pagination */
