@@ -1,11 +1,11 @@
 export const portfolioButtons = ["all", "javascript", "react", "angular", "ecommerce", "wordpress-cms"]
 
 const url = process.env.PUBLIC_URL;
-const jsLink = "projects/Javascript/Javascript";
-const recLink = "projects/React/React";
-const angLink = "projects/Angular/Angular";
-const emcLink = "projects/Ecommerce/Ecommerce";
-const wrdLink = "projects/Wordpress/Wordpress";
+const jsLink = "/projects/Javascript/Javascript";
+const recLink = "/projects/React/React";
+const angLink = "/projects/Angular/angular";
+const emcLink = "/projects/Ecommerce/Ecommerce";
+const wrdLink = "/projects/Wordpress/Wordpress";
 
 export const portfolioGallery = 
 {
@@ -33,7 +33,7 @@ export const portfolioGallery =
     `${url}${angLink}1.png`,
     `${url}${angLink}2.png`,
     `${url}${angLink}3.png`,
-    `${url}${angLink}4.jpeg`,
+    `${url}${angLink}4.png`,
   ],  
   "wordpress-cms": [
     `${url}${wrdLink}1.jpeg`, 

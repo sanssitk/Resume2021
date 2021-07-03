@@ -14,7 +14,7 @@ function ProfileHeader() {
       <div className="profile__left">
         <div className="profile__image">
           <img
-            src={process.env.PUBLIC_URL + "sanjay.jpg"}
+            src={`${process.env.PUBLIC_URL}/sanjay.jpg`}
             alt="profileImage"
             style={profileImgStyle()}
           />
