@@ -17,7 +17,7 @@ function ProfileBody() {
         ★★★★★★★★★★ <strong>Strong Skill Sets</strong> ★★★★★★★★★★<br></br>
         <strong>- Full Stack Web Development</strong>
         <br></br>
-        ReactJs with redux, Javascript, NodeJs, Express, SQL, NoSQL, RestApi,
+        ReactJs with redux, Javascript, NodeJs, Express, SQL, NoSQL, RestApi, API Integration
         Heroku, Glitch
         <br></br>
         <strong>- Cross Platform Mobile App</strong>
