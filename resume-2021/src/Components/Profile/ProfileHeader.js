@@ -3,12 +3,14 @@ import { useStateValue } from "../../StateManagement/StateProvider";
 
 function ProfileHeader() {
   const [{ profileIsOpen }] = useStateValue();
-  
+
   const profileImgStyle = () => {
-    const profileImg = {height : ""};
-    profileIsOpen ? profileImg.height = "120px" : profileImg.height = "95px";
+    const profileImg = { height: "" };
+    profileIsOpen
+      ? (profileImg.height = "120px")
+      : (profileImg.height = "95px");
     return profileImg;
-  }
+  };
   return (
     <div className="profile__header">
       <div className="profile__left">
@@ -34,7 +36,7 @@ function ProfileHeader() {
           <li>Exp Years: 4 Years</li>
           <li>Location: Irving, Tx</li>
           <li>
-            <a href={process.env.PUBLIC_URL + "/Sanjay_Js_Resume2021.pdf"}>Download CV</a>
+            <a href={process.env.PUBLIC_URL + "/Sanjay_Js.pdf"}>Download CV</a>
           </li>
         </ul>
       </div>

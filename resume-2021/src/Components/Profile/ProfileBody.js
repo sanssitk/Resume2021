@@ -4,7 +4,7 @@ function ProfileBody() {
   return (
     <div className="profile__body">
       <p>
-        I have relevant 4 years of experience on cross Platform
+        I have relevant 5 years of experience on cross Platform
         Web/Client-Server applications design and development along with
         technical SEO and project management. I am a goal-oriented and
         fascinated about coding principles. I have honed my skills on staying
@@ -17,15 +17,14 @@ function ProfileBody() {
         ★★★★★★★★★★ <strong>Strong Skill Sets</strong> ★★★★★★★★★★<br></br>
         <strong>- Full Stack Web Development</strong>
         <br></br>
-        ReactJs with redux, Javascript, NodeJs, Express, SQL, NoSQL, RestApi, API Integration
-        Heroku, Glitch
+        ReactJs, Redux, Javascript, TypeScript, NodeJs, Express, SQL, NoSQL, RestApi       
         <br></br>
         <strong>- Cross Platform Mobile App</strong>
         <br></br>
         React Native, Flutter(Google Mobile Engine)<br></br>
         <strong>-Frontend Web Development </strong>
         <br></br>
-        ReactJS, HTML5, CSS3, SASS, JSON, XML, Jquery, Bootstrap, Matetrial UI,
+        React hook, Context, Jest, React testing Library, JSX, SASS, JSON, XML, Jquery, Bootstrap, Matetrial UI,
         FontAwesome <br></br>
         <strong>- MERN Stack Development</strong>
         <br></br>
@@ -33,7 +32,7 @@ function ProfileBody() {
         Firebase, Express) <br></br>
         <strong>- Backend Development</strong>
         <br></br>
-        NodeJS, Express, Multer, Pusher, Cors<br></br>-
+        NodeJS, Express, Multer, Pusher, Cors, AWS, Google Cloud, Firebase<br></br>-
         <strong>CMS, e-Commerce, CRM</strong> <br></br>
         Wordpress and Shopify theme development along with plugins customize
         <br></br>

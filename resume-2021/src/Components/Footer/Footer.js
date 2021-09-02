@@ -1,37 +1,45 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faSkype } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+  faPhoneSquareAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
-function Footer() {  
+function Footer() {
   return (
     <div className="footer">
       <p className="legal__title">
         Sanjay B Shrestha @ {new Date().getFullYear()} All Rights Reserved
       </p>
-      <p>Legal Name: Sanjay B Shrestha</p>
-      <p>
-        Linkedin:{" "}
-        <a href="https://www.linkedin.com/in/s-shrestha-020986168/">
-          https://www.linkedin.com/in/s-shrestha
+      <h4>Sanjay B Shrestha</h4>
+      <div className="detailIcons">
+        <a href="https://www.linkedin.com/in/sanjay-shrestha-020986168/">
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            style={{ color: "#0077b5" }}
+            spin
+          />
         </a>
-      </p>
-      <p>
-        Email:{" "}
         <a href="mailto:sanssitk@gmail.com?subject=Hi%20Sanjay">
-          sanssitk@gmail.com
+          <FontAwesomeIcon
+            style={{ color: "#EA4335" }}
+            icon={faEnvelope}
+            spin
+          />
         </a>
-      </p>
-      <p>
-        Phone: <a href="+1-704-890-4961">+1 (704) 890-4961</a>
-      </p>
-      <p>
-        <label htmlFor="whatsapp" value="whatsup">
-          Whatsapp:
-        </label>
-        <a href="https://wa.me/17048904961" name="whatsapp">
-          {" "}
-          https://wa.me/17048904961
+        <a href="+1-469-751-2103">
+          <FontAwesomeIcon
+            style={{ color: "aqua" }}
+            icon={faPhoneSquareAlt}
+            spin
+          />
         </a>
-      </p>
+        <a href="skype:sanjay.001?chat">
+          <FontAwesomeIcon icon={faSkype} style={{ color: "#00aff0" }} spin />
+        </a>
+      </div>
     </div>
   );
 }
