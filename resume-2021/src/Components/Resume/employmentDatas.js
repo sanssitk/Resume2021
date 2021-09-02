@@ -1,7 +1,7 @@
 const text =
   "* Worked on Dashboard page and form where user can get notification about future updates. \n * Worked on dynamic chart, graph build, column range. \n * Worked on scripts for QuickBooks API, routing-map and generating inspection report. \n * Experience working on Chart.js to create charts & used Google static map API for maps. \n * Worked with Google and Facebook login Authentication using firebase. \n * Developed custom filter, pagination, navigation in React.JS for the application. \n * Utilized Bootstrap, Semantic UI, RESTful API, jQuery to develop a reactive web app. \n * Used React-Router to turn application into Single Page Application. ";
-const newText = text.split("\n").map((i) => {
-  return <p>{i}</p>;
+const newText = text.split("\n").map((i, index) => {
+  return <p key={index}>{i}</p>;
 });
 
 export default [
